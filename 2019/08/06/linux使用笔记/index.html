@@ -2,23 +2,23 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Hello World - Hexo</title>
+<title>Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="linux自学笔记查看服务器地址 ifconfig；查看服务器地址 刚安装的虚拟机可能不能解析主机地址，原因为未连接网络：  ip add 查看网卡地址，记住ens33样式的名字 查找配置文件  1cd /etc/sysconfig/network-scripts/   vi ifcfg-ens33 最底下ONBOOT = yes     修改完毕后service network restart">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/08/06/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/08/06/linux使用笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="linux自学笔记查看服务器地址 ifconfig；查看服务器地址 刚安装的虚拟机可能不能解析主机地址，原因为未连接网络：  ip add 查看网卡地址，记住ens33样式的名字 查找配置文件  1cd /etc/sysconfig/network-scripts/   vi ifcfg-ens33 最底下ONBOOT = yes     修改完毕后service network restart">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-06T08:02:19.290Z">
+<meta property="og:updated_time" content="2019-07-30T12:20:35.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="linux自学笔记查看服务器地址 ifconfig；查看服务器地址 刚安装的虚拟机可能不能解析主机地址，原因为未连接网络：  ip add 查看网卡地址，记住ens33样式的名字 查找配置文件  1cd /etc/sysconfig/network-scripts/   vi ifcfg-ens33 最底下ONBOOT = yes     修改完毕后service network restart">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Hello World" height="28">
+                <img src="/images/logo.svg" alt height="28">
             
             </a>
         </div>
@@ -144,13 +144,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-06T08:02:19.290Z">2019-08-06</time>
+                <time class="level-item has-text-grey" datetime="2019-08-06T09:53:47.118Z">2019-08-06</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 121 words)
+                    4 minutes read (About 587 words)
                 </span>
                 
                 
@@ -159,24 +159,74 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Hello World
+                
             
         </h1>
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h1 id="linux自学笔记"><a href="#linux自学笔记" class="headerlink" title="linux自学笔记"></a>linux自学笔记</h1><h3 id="查看服务器地址"><a href="#查看服务器地址" class="headerlink" title="查看服务器地址"></a>查看服务器地址</h3><ol>
+<li><p>ifconfig；查看服务器地址</p>
+<p>刚安装的虚拟机可能不能解析主机地址，原因为未连接网络：</p>
+<ol>
+<li>ip add 查看网卡地址，记住ens33样式的名字</li>
+<li>查找配置文件</li>
+</ol>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">cd</span> /etc/sysconfig/network-scripts/</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p>vi ifcfg-ens33</p>
+<p>最底下<br>ONBOOT = yes   </p>
+</li>
+<li><p>修改完毕后<br>service network restart</p>
+</li>
+<li><p>ping <a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="服务器管理注意事项-20190726"><a href="#服务器管理注意事项-20190726" class="headerlink" title="服务器管理注意事项 20190726"></a>服务器管理注意事项 20190726</h3><ol>
+<li><p>远程服务器不能关机，否则只能管理人员帮忙开机</p>
+</li>
+<li><p>服务器重启前需要终止正在执行的服务；使用“shutdown -r now”重启，正常保存和中止服务器中正在运行的程序，是安全命令</p>
+</li>
+<li><p>最好在重启前执行几次 “sync” 命令，这条命令是数据同步命令，可以让暂时保存在内存中的数据同步到硬盘上。</p>
+</li>
+</ol>
+<h3 id="用户、用户权限管理"><a href="#用户、用户权限管理" class="headerlink" title="用户、用户权限管理"></a>用户、用户权限管理</h3><ol>
+<li>useradd 选项 用户名 ：创建用户，并创建用户目录</li>
+<li>userdel 选项 用户名 ：删除用户，-r 把用户的主目录一起删除。</li>
+<li>passwd 选项 用户名 ：修改创建密码</li>
+</ol>
+<h3 id="linux虚拟机上传文件"><a href="#linux虚拟机上传文件" class="headerlink" title="linux虚拟机上传文件"></a>linux虚拟机上传文件</h3><ol>
+<li>安装工具：yum install lrzsz -y</li>
+<li>检查是否安装成功：rpm -qa |grep lrzsz</li>
+<li>xshell中输入 rz ，对话框中选择上传文件</li>
+<li>sz {文件} 弹出选择本地保存文件对话框</li>
+</ol>
+<h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><ol>
+<li><p>经过以上步骤，上传的node包解压：tar zxvf node-v10.16.0-linux-x64.tar.gzip </p>
+</li>
+<li><p>添加node环境变量：</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NODE_HOME=/home/tang/work/pkg_tar/node-v10.16.0-linux-x64</span><br><span class="line"><span class="hljs-built_in">export</span> NODE_HOME</span><br><span class="line"><span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$&#123;PATH&#125;</span>:<span class="hljs-variable">$&#123;NODE_HOME&#125;</span>/bin</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><strong>修改CentOS默认yum源为国内yum镜像源</strong></p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup`</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>2、下载ailiyun的yum源配置文件到/etc/yum.repos.d/<br>CentOS7</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo`</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>CentOS6</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo`</span><br></pre></td></tr></table></figure>
 
+<p>CentOS5</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo`</span><br></pre></td></tr></table></figure>
+
+<p>3、运行yum makecache生成缓存</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# yum makecache`</span><br></pre></td></tr></table></figure>
+
+<p>4、这时候再更新系统就会看到以下mirrors.aliyun.com信息</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`[root@localhost ~]``# yum -y update``已加载插件：fastestmirror, refresh-packagekit, security``设置更新进程Loading mirror speeds from cached hostfile``* base: mirrors.aliyun.com``* extras: mirrors.aliyun.com``* updates: mirrors.aliyun.com`</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -226,12 +276,19 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/06/ceui/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/06/vim编辑器/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">ceui</span>
+                <span class="level-item"></span>
             </a>
         </div>
         
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/06/linux教程学习笔记/">
+                <span class="level-item"></span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
         
     </div>
 </div>
@@ -717,7 +774,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Hello World" height="28">
+                    <img src="/images/logo.svg" alt height="28">
                 
                 </a>
                 <p class="is-size-7">
